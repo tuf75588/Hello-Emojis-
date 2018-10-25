@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import EmojiTextBox from './EmojiTextBox';
+
 
 class App extends Component {
   render() {
+    const obj = {
+      foo: {
+        bar: {
+          baz: 42,
+        },
+      },
+    };
+    const baz = obj?.foo?.bar?.baz; 
+    console.log(baz);
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <h1>Hello Emojis! <span role='img' aria-label='emoji'>👋</span></h1>
+          <EmojiTextBox />
       </div>
     );
   }
