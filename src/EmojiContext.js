@@ -1,7 +1,5 @@
-import React from 'react'
-const EmojiContext = React.createContext({
-    emojis: {
-      smile: '😊'
-    }
-  })
-  export default EmojiContext
+import React from 'react';
+
+const EmojiContext = React.createContext('defaultValue');
+
+export default EmojiContext;

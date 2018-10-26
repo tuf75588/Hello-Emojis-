@@ -3095,6 +3095,11 @@ emoji-regex@^6.5.1:
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-6.5.1.tgz#9baea929b155565c11ea41c6626eaa65cef992c2"
   integrity sha512-PAHp6TxrCy7MGMFidro8uikr+zlJJKJ/Q6mm2ExZ7HwkyR9lSVFfE3kt36qcwa24BQL7y0G9axycGjK1A/0uNQ==
 
+emoji.json@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/emoji.json/-/emoji.json-11.0.0.tgz#89b3bac18888aac708b54ea4d6cc0567a25c1bdb"
+  integrity sha512-CDBkBcVmhGwjupn37OPUhoAr/XJ9hrYtyA1t4xac6QjldCjWCiedZyKxGAEV1738jtpd+t4W0I52H1Q1LH1hhg==
+
 emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"

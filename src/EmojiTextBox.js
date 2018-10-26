@@ -1,16 +1,40 @@
-import React from 'react'
-import EmojiContext from './EmojiContext'
-export default (props) => (
-    <EmojiContext.Consumer>
-        {data => (
-     <textarea   
-     {...props} 
-     value="Hello World"
-     rows="10" 
-     cols="50"
-     value={"Hello World smile".replace('smile', data.emojis.smile)} 
-     ></textarea>
-     )}
-    </EmojiContext.Consumer>
+import React from 'react';
+import EmojiContext from './EmojiContext';
+
+class EmojiTextBox extends React.Component {
+  state = {
+    text: ''
+  };
+  keyUp = (e, data) => {
+    if (e.keyCode === 32) {
+      this.emojify(data);
+    }
+  };
+  emojify = (data) => {
     
-)
+ 
+  };
+  render() {
+    return (
+      <EmojiContext.Consumer>
+        {data => (
+          <textarea
+            {...this.props}
+            rows="10"
+            cols="50"
+            onChange={event => this.setState({ text: event.target.value })}
+            onKeyUp={e => this.keyUp(e, data)}
+            value={this.state.text}
+          />
+        )}
+      </EmojiContext.Consumer>
+    );
+  }
+}
+
+export default EmojiTextBox;
+
+// export default (props) => (
+//
+
+// )
